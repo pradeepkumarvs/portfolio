@@ -1,0 +1,73 @@
+/* Global Styles */
+body {
+    background: linear-gradient(to bottom, #1e3a8a, #2563eb); /* Dark to light blue gradient */
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Preloader */
+#preloader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #1e3a8a; /* Matches gradient start */
+}
+
+.triangle-loader {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 16px solid white;
+    animation: jump 0.8s infinite;
+}
+
+@keyframes jump {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/* Section Titles */
+h1, h2 {
+    text-align: center;
+}
+
+/* Project Cards */
+.project-card {
+    background: white;
+    color: black;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Contact Section */
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.contact-icons a {
+    color: white;
+    font-size: 2rem;
+    transition: color 0.3s;
+}
+
+.contact-icons a:hover {
+    color: #60a5fa; /* Light blue hover color */
+}

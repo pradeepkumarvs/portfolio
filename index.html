@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pradeep Kumar Portfolio</title>
+    <!-- Link css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Hover Effects for Projects and Services */
+        .hover-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+        }
+
+        .hover-card:hover {
+            transform: scale(1.05); /* Slightly scales up the card */
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5); /* Adds a shadow */
+            background-color: #1e293b; /* Changes the background to a darker shade */
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="bg-neutral-950 text-white py-4 fixed top-0 left-0 w-full shadow-lg z-10">
+        <div class="2xl:container mx-auto w-[90%] flex justify-between items-center">
+            <h1 class="text-[24px] font-[Poppins] font-[700]">Pradeep Kumar</h1>
+            <ul class="flex gap-8">
+                <li><a href="#home" class="hover:text-blue-400 transition duration-300">Home</a></li>
+                <li><a href="#projects" class="hover:text-blue-400 transition duration-300">Projects</a></li>
+                <li><a href="#services" class="hover:text-blue-400 transition duration-300">Services</a></li>
+                <li><a href="#contact" class="hover:text-blue-400 transition duration-300">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Introduction Section -->
+    <section id="home" class="py-20 bg-black text-white">
+        <div class="2xl:container mx-auto w-[90%] grid grid-cols-1 lg:grid-cols-2 gap-10">
+            <div class="flex flex-col justify-center items-center lg:items-start gap-7">
+                <h1 class="font-[Poppins] text-[36px] font-[500]">Hi, I'm Pradeep Kumar</h1>
+                <p class="font-[Poppins] text-[25px] font-[400]">I'm a Web Developer</p>
+                <p class="font-[Poppins] text-[18px] font-[400] leading-relaxed">
+                    I am a front-end developer passionate about creating engaging and user-friendly web experiences. 
+                    Through my internship at Code Bind Technologies, I refined my skills in HTML, CSS, JavaScript, 
+                    and Bootstrap while working on projects that integrated both front-end and back-end technologies.
+                </p>
+                <div class="flex gap-5">
+                    <a href="Pradeep_Resume.pdf" target="_blank">
+                        <button class="text-[18px] font-[Poppins] bg-blue-950 px-4 py-2 text-white hover:bg-blue-800 transition duration-300">
+                            Hire
+                        </button>
+                    </a>
+                    
+                    <button class="text-[18px] font-[Poppins] bg-blue-950 px-4 py-2 text-white hover:bg-blue-800 transition duration-300">Contact</button>
+                    
+                    <a href="https://github.com/pradeepkumarvs" target="_blank">
+                        <button class="text-[18px] font-[Poppins] bg-blue-950 px-4 py-2 text-white hover:bg-blue-800 transition duration-300">
+                            Explore my works
+                        </button>
+                    </a>
+                     
+                </div>
+            </div>
+            <div>
+                <img class="rounded-lg shadow-lg" src="https://ik.imagekit.io/98z8afjbc/person-front-computer-working-html_23-2150040428.avif?updatedAt=1731407913495" alt="Web Developer Working">
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray">
+        <div class="2xl:container mx-auto w-[90%] text-center">
+            <h1 class="font-[Poppins] text-[36px] font-[500] mb-10">Projects</h1>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-neutral-950 text-white p-5 rounded-lg shadow-lg hover-card">
+                    <h2 class="text-[25px] font-[500]">Travel Agency Website</h2>
+                    <p class="text-[18px] font-[400] leading-relaxed">Developed a responsive travel agency website using HTML, CSS, JavaScript, and Bootstrap, ensuring a seamless user experience.</p>
+                </div>
+                <div class="bg-neutral-950 text-white p-5 rounded-lg shadow-lg hover-card">
+                    <h2 class="text-[25px] font-[500]">Photography Website</h2>
+                    <p class="text-[18px] font-[400] leading-relaxed">Created a photography website with features like dynamic image galleries, built during an internship at Code Bind Technologies.</p>
+                </div>
+                <div class="bg-neutral-950 text-white p-5 rounded-lg shadow-lg hover-card">
+                    <h2 class="text-[25px] font-[500]">Metro Parking Settlement</h2>
+                    <p class="text-[18px] font-[400] leading-relaxed">A comprehensive project using Angular and .NET Web API for parking management, implemented for CMRL Metro.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-blue">
+        <div class="2xl:container mx-auto w-[90%] text-center">
+            <h1 class="font-[Poppins] text-[36px] font-[500] mb-10">Services</h1>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                <div class="bg-neutral-950 text-white p-5 rounded-lg shadow-lg hover-card">
+                    <h2 class="text-[25px] font-[500]">UI Design</h2>
+                    <p class="text-[18px] font-[400] leading-relaxed">Creating visually appealing, user-friendly interfaces with a focus on intuitive navigation and responsive design.</p>
+                </div>
+                <div class="bg-neutral-950 text-white p-5 rounded-lg shadow-lg hover-card">
+                    <h2 class="text-[25px] font-[500]">UX Design</h2>
+                    <p class="text-[18px] font-[400] leading-relaxed">Crafting user experiences that prioritize usability, engagement, and satisfaction at every step of the user journey.</p>
+                </div>
+                <div class="bg-neutral-950 text-white p-5 rounded-lg shadow-lg hover-card">
+                    <h2 class="text-[25px] font-[500]">Responsive Design</h2>
+                    <p class="text-[18px] font-[400] leading-relaxed">Ensuring seamless user experiences on all devices with responsive designs that adapt gracefully to any screen size.</p>
+                </div>
+                <div class="bg-neutral-950 text-white p-5 rounded-lg shadow-lg hover-card">
+                    <h2 class="text-[25px] font-[500]">Frontend Development</h2>
+                    <p class="text-[18px] font-[400] leading-relaxed">Building scalable, responsive interfaces using modern frameworks like Angular, React, and Tailwind CSS.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section -->
+<section id="contact" class="py-20 bg-neutral-950 text-white">
+    <div class="2xl:container mx-auto w-[90%] text-center">
+        <h1 class="font-[Poppins] text-[36px] font-[500] mb-10">Contact Me</h1>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+            <!-- Contact Form -->
+            <form action="#" method="POST" class="bg-neutral-800 p-8 rounded-lg shadow-lg">
+                <div class="mb-6">
+                    <label for="name" class="block text-left text-[18px] font-[Poppins] mb-2">Name</label>
+                    <input type="text" id="name" name="name" class="w-full bg-neutral-900 text-white p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Your Name" required>
+                </div>
+                <div class="mb-6">
+                    <label for="email" class="block text-left text-[18px] font-[Poppins] mb-2">Email</label>
+                    <input type="email" id="email" name="email" class="w-full bg-neutral-900 text-white p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Your Email" required>
+                </div>
+                <div class="mb-6">
+                    <label for="message" class="block text-left text-[18px] font-[Poppins] mb-2">Message</label>
+                    <textarea id="message" name="message" rows="5" class="w-full bg-neutral-900 text-white p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="w-full bg-blue-950 text-white text-[18px] font-[Poppins] py-3 rounded-lg hover:bg-blue-800 transition duration-300">Send Message</button>
+            </form>
+            
+            <!-- Contact Details -->
+            <div class="flex flex-col items-center lg:items-start gap-5">
+                <p class="text-[18px] font-[Poppins]">Feel free to reach out to me through the form or using the details below.</p>
+                <div class="flex items-center gap-5">
+                    <i class="fas fa-envelope text-blue-400 text-[24px]"></i>
+                    <p class="text-[18px] font-[Poppins]">vspradeepkumar09@example.com</p>
+                </div>
+                <div class="flex items-center gap-5">
+                    <i class="fas fa-phone text-blue-400 text-[24px]"></i>
+                    <p class="text-[18px] font-[Poppins]">+91 9884861386</p>
+                </div>
+                <div class="flex items-center gap-5">
+                    <i class="fas fa-map-marker-alt text-blue-400 text-[24px]"></i>
+                    <p class="text-[18px] font-[Poppins]">Chennai, Tamil Nadu, India</p>
+                </div>
+               
+
+</body>
+</html>
